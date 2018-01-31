@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5DA6096D2022437F00D9C2BB /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5DA6096B2022437F00D9C2BB /* Controller.cpp */; };
 		5DA6096F202243A000D9C2BB /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5DA6096E202243A000D9C2BB /* Runner.cpp */; };
+		5DA609752022474500D9C2BB /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5DA609732022474500D9C2BB /* Timer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		5DA6096B2022437F00D9C2BB /* Controller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Controller.cpp; sourceTree = "<group>"; };
 		5DA6096C2022437F00D9C2BB /* Controller.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Controller.hpp; sourceTree = "<group>"; };
 		5DA6096E202243A000D9C2BB /* Runner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Runner.cpp; sourceTree = "<group>"; };
+		5DA609732022474500D9C2BB /* Timer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
+		5DA609742022474500D9C2BB /* Timer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Timer.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,10 +72,20 @@
 		5DA6096A2022436D00D9C2BB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				5DA609722022471D00D9C2BB /* Tools */,
 				5DA6096B2022437F00D9C2BB /* Controller.cpp */,
 				5DA6096C2022437F00D9C2BB /* Controller.hpp */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		5DA609722022471D00D9C2BB /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				5DA609732022474500D9C2BB /* Timer.cpp */,
+				5DA609742022474500D9C2BB /* Timer.hpp */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DA609752022474500D9C2BB /* Timer.cpp in Sources */,
 				5DA6096F202243A000D9C2BB /* Runner.cpp in Sources */,
 				5DA6096D2022437F00D9C2BB /* Controller.cpp in Sources */,
 			);
