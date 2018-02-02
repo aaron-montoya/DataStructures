@@ -12,17 +12,38 @@ using namespace std;
 
 void Controller::start()
 {
-    Timer codeTimer;
-    codeTimer.startTimer();
-    cout << "CODEEEEEEEE BOIIIIII" << endl;
-    codeTimer.stopTimer();
-    codeTimer.displayInformation();
-    codeTimer.resetTimer();
-    codeTimer.startTimer();
-    for(int index = 0; index < 5000; index++)
-    {
-        cout << "Index is " << index << "\t";
-    }
-    codeTimer.stopTimer();
-    codeTimer.displayInformation();
+    findMaxAndMin();
 }
+
+void Controller::findMaxAndMin()
+{
+    Timer searchTimer;
+    searchTimer.startTimer();
+    vector<CrimeData> myData = FileController :: readCrimeDataToVector("/Users/amon1978/C Plus Plus/DataStructures/DataStructures/Data/crime.csv");
+    
+    int minIndex = 0;
+    int maxIndex = 0;
+    
+    for(int index = 1; index < myData.size(); index++)
+    {
+        if (myData [minIndex]> myData [index])
+        {
+            maxIndex = index;
+        }
+    }
+    searchTimer.stopTimer();
+    cout << "The smallest Crime stat is at " << minIndex << " and it is: " << myData[minIndex] << endl;
+    cout << "The largest Crime stat is at " << maxIndex << " and it is: " << myData[maxIndex] << endl;
+    searchTimer.displayInformation();
+}
+
+
+
+
+
+
+
+
+
+
+
