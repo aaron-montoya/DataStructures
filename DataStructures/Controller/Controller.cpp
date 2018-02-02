@@ -45,7 +45,12 @@ void Controller::findMaxAndMin()
 
 void Controller::testArray()
 {
+    Array<int> aaronArray(10);
     
+    aaronArray[0] = 123;
+    aaronArray.setAtIndex(0, 321);
+    
+    cout << aaronArray[0] << endl;
 }
 
 

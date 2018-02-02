@@ -36,7 +36,7 @@ public:
     
     //Methods
     int getSize() const;
-    Type getFromindex(int index);
+    Type getFromIndex(int index);
     void setAtIndex(int index, Type data);
 };
 
