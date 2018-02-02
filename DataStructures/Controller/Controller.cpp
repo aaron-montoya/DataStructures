@@ -13,6 +13,7 @@ using namespace std;
 void Controller::start()
 {
     findMaxAndMin();
+    testArray();
 }
 
 void Controller::findMaxAndMin()
@@ -42,7 +43,10 @@ void Controller::findMaxAndMin()
     searchTimer.displayInformation();
 }
 
-
+void Controller::testArray()
+{
+    
+}
 
 
 
