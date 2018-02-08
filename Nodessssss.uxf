@@ -4,9 +4,9 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>390</x>
-      <y>30</y>
-      <w>310</w>
+      <x>620</x>
+      <y>210</y>
+      <w>460</w>
       <h>190</h>
     </coordinates>
     <panel_attributes>LinearNode&lt;Type&gt;
@@ -26,8 +26,8 @@ bg=red</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>40</x>
-      <y>30</y>
+      <x>680</x>
+      <y>480</y>
       <w>310</w>
       <h>190</h>
     </coordinates>
@@ -41,5 +41,51 @@ bg=red</panel_attributes>
 + setData(Type data) : void
 bg=yellow</panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>820</x>
+      <y>390</y>
+      <w>30</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;90.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>220</x>
+      <y>210</y>
+      <w>310</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>/List&lt;Type&gt;/
+--
+#size :int
+--
++ add(Type item) : void
++ addAtIndex(int index, Type item) : void
++ remove(int index) : Type
++ getFromIndex(int index) : Type
+
++ getSize const : int
++ getFront() : LinearNode&lt;Type&gt; *
++ getEnd() : LinearNode&lt;Type&gt; *
+
+bg=#00bfff</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>520</x>
+      <y>300</y>
+      <w>120</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;100.0;10.0</additional_attributes>
   </element>
 </diagram>
