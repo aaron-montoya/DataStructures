@@ -9,7 +9,7 @@
 #ifndef LinearNode_hpp
 #define LinearNode_hpp
 
-#include "Node.hpp"
+#include "../Node/Node.hpp"
 
 template<class Type>
 class LinearNode : public Node<Type>
@@ -19,7 +19,7 @@ protected:
     
 public:
     LinearNode();
-    Linearnode(Type Data);
+    LinearNode(Type Data);
     LinearNode(Type Data, LinearNode<Type> * next);
     void setNextNode(LinearNode<Type> * next);
     LinearNode<Type> * getNextNode();
@@ -38,7 +38,7 @@ LinearNode<Type> :: LinearNode(Type data) : Node<Type>()
 }
 
 template <class Type>
-LinearNode<Type> :: LinearNode(Type data) : Node<Type>(data)
+LinearNode<Type> :: LinearNode(Type data, LinearNode<Type> * next) : Node<Type>(data)
 {
     this->next = next;
 }
