@@ -8,6 +8,9 @@
 
 #include "List.hpp"
 
+#ifndef LinkedList_hpp
+#define LinkedList_hpp
+
 using namespace std;
 
 template <class Type>
@@ -28,10 +31,10 @@ public:
     LinearNode<Type> * getEnd();
     
     //Structure Methods
-    void add(Type item);
-    void addAtIndex(int Index, Type item);
-    Type getFromIndex(int index);
-    Type remove(int index);
+    virtual void add(Type item);
+    virtual void addAtIndex(int Index, Type item);
+    virtual Type getFromIndex(int index);
+    virtual Type remove(int index);
     //Type setAtIndex(int index, Type item);
     //bool contains(Type item);
 };
@@ -187,8 +190,7 @@ int LinkedList<Type> :: getSize() const
     return this->size;
 }
 
-#ifndef LinkedList_hpp
-#define LinkedList_hpp
+
 
 #endif /* LinkedList_hpp */
 
