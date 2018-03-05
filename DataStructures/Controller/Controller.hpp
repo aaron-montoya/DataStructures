@@ -13,7 +13,7 @@
 #include <vector>
 #include "Tools/Timer.hpp"
 #include "FileController.hpp"
-#include "../Model/Structures/Array.hpp"
+#include "/Users/amon1978/C Plus Plus/DataStructures/DataStructures/Model/Structures/Linear/Array.hpp"
 
 class Controller
 {

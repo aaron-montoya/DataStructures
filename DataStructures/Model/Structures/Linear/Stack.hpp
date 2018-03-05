@@ -46,7 +46,7 @@ Stack<Type> :: ~Stack()
 }
 
 template <class Type>
-void Stack<Type> :: push(Type daata)
+void Stack<Type> :: push(Type data)
 {
     LinearNode<Type> * add = new LinearNode<Type>(data);
     
