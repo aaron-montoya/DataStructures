@@ -12,8 +12,9 @@ using namespace std;
 
 void Controller::start()
 {
-    findMaxAndMin();
-    testArray();
+    recursionTester test;
+    test.testRecursionNumbers();
+    test.testRecursionString();
 }
 
 void Controller::findMaxAndMin()

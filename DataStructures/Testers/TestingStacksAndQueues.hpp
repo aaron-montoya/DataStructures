@@ -18,7 +18,7 @@
 
 using namespace std;
 
-public class TestingStacksAndQueues
+class TestingStacksAndQueues
 {
 public:
     void stackVersusList();

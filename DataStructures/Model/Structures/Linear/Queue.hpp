@@ -33,6 +33,8 @@ public:
     Type getFromIndex(int index);
     Type remove(int index);
     
+};
+
     template <class Type>
     Queue<Type> :: Queue() : LinkedList<Type>()
     {
@@ -68,9 +70,9 @@ public:
     }
     
     template <class Type>
-    void Queue<Type :: addAtIndex(int index, Type item)
+    void Queue<Type> :: addAtIndex(int index, Type item)
     {
-        assert(index == this0>size - 1);
+        assert(index == this->size - 1);
         enqueue(item);
     }
     
@@ -86,7 +88,7 @@ public:
         assert(this->size > 0);
         
         Type returned = this->front->getData();
-        LinearNode<Type> * remoed = this->front;
+        LinearNode<Type> * removed = this->front;
         this->front = removed->getNextNode();
         
         delete removed;
@@ -96,7 +98,7 @@ public:
         return returned;
     }
     
-    templatae <class Type>
+    template <class Type>
     Type Queue<Type> :: remove (int index)
     {
         assert(index == 0);
@@ -115,18 +117,17 @@ public:
     template <class Type>
     Type Queue<Type> :: peek()
     {
-        assert(this->size > 0)
+        assert(this->size > 0);
         return this->getFront()->getData();
     }
     
-    tempalte <class Type>
-    Type Queue<type> :: getFromIndex(int index)
+    template <class Type>
+    Type Queue<Type> :: getFromIndex(int index)
     {
         assert(index == 0);
         return peek();
     }
-    
-};
+
 
 #endif /* Queue_hpp */
 
