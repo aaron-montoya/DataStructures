@@ -10,14 +10,15 @@
 #define BinaryTreeTester_hpp
 
 #include "/Users/amon1978/C Plus Plus/DataStructures/DataStructures/Model/Node/BinaryTreeNode.hpp"
+#include "/Users/amon1978/C Plus Plus/DataStructures/DataStructures/Model/Structures/NonLinear/BinarySearchTree.hpp"
 #include <iostream>
 
 class BinaryTreeTester
 {
 private:
-    
+    BinarySearchTree<int> testTree;
 public:
-    
+    void doTreeStuff();
 };
 
 #endif /* BinaryTreeTester_hpp */

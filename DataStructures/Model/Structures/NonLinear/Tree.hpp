@@ -9,7 +9,7 @@
 #ifndef Tree_hpp
 #define Tree_hpp
 
-#include "/Users/amon1978/C Plus Plus/DataStructures/DataStructures/Model/Node/BinaryTreeNode.hpp"
+#include "../../Node/BinaryTreeNode.hpp"
 
 template <class Type>
 class Tree
@@ -29,7 +29,7 @@ public:
     //Traversals
     virtual void inOrderTraversal() = 0;
     virtual void preOrderTraversal() = 0;
-    virtual void postOrderTraverasal() = 0;
+    virtual void postOrderTraversal() = 0;
 };
 
 #endif /* Tree_hpp */
