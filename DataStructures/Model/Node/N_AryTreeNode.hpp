@@ -51,28 +51,37 @@ N_AryTreeNode<Type> :: ~N_AryTreeNode()
         delete nodes[index];
     }
 }
-    
 
+template <class Type>
+N_AryTreeNode<Type> * N_AryTreeNode<Type> :: getRoot()
+{
+    return root;
+}
 
+template <class Type>
+vector<N_AryTreeNode<Type>*> N_AryTreeNode<Type> :: getNodes()
+{
+    return nodes;
+}
 
+template <class Type>
+int N_AryTreeNode<Type> :: getChildCount()
+{
+    return nodes.size();
+}
 
+template <class Type>
+void N_AryTreeNode<Type> :: setRoot(N_AryTreeNode<Type> * root)
+{
+    this->root = root;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+template <class Type>
+void N_AryTreeNode<Type> :: addChild(Type data)
+{
+    N_AryTreeNode<Type> * node = new N_AryTreeNode<Type>(data);
+    nodes.push_back(node);
+}
 
 
 
