@@ -39,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		5D021B222024EE1E005BA1E3 /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
+		5D07ED65208E50EC007F8F00 /* N_AryTreeNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = N_AryTreeNode.hpp; sourceTree = "<group>"; };
 		5D16BDC7206035FA00AAD3F9 /* Graph.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Graph.cpp; sourceTree = "<group>"; };
 		5D16BDC8206035FA00AAD3F9 /* Graph.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Graph.hpp; sourceTree = "<group>"; };
 		5D26700D203F4AF2008CB0A0 /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stack.hpp; sourceTree = "<group>"; };
@@ -161,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				5D9DADA3202CD3BD00BA3092 /* LinearNode.cpp */,
+				5D07ED65208E50EC007F8F00 /* N_AryTreeNode.hpp */,
 				5D9DADA4202CD3BD00BA3092 /* LinearNode.hpp */,
 				5D9DADA6202CD58200BA3092 /* Node.cpp */,
 				5D9DADA7202CD58200BA3092 /* Node.hpp */,
